@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Absolute and Relative Positioning</title>
+	<!-- Not good for responsive design, don't especially use fixed on mobile devices -->
+	<style>
+		* {margin: 0; padding: 0;}
+		body {
+			width: 900px;
+			height: 1200px;
+			margin: 0 auto;
+			position: relative;
+		}
+		
+		#curly {
+			background-color:red;
+			width: 280px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: auto;
+			z-index:1;
+		}
+
+		#larry {
+			background-color:blue;
+			width: 280px;
+			position: absolute;
+			top: 0;
+			left: 300px;
+			overflow: auto;
+			z-index:2;
+		}
+		#moe {
+			background-color:green;
+			width: 280px;
+			position: absolute;
+			top: 0;
+			left: 600px;
+			overflow: auto;
+			z-index:3;
+		}
+
+
+	</style>
+	</head>
+<!-- Ipsum.com -->
+	<body>
+
+		<p id="larry">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at est diam. Maecenas sagittis nulla a augue aliquam eleifend. Vivamus rhoncus egestas dolor. Sed porttitor odio quis est tincidunt volutpat quis ut turpis. Pellentesque vulputate odio in tristique consectetur. Aenean eu placerat lectus. Proin massa tellus, pharetra at placerat non, posuere sit amet odio. Fusce at nisl nisi. Aliquam at elit quam. Ut non lacinia metus. Aenean suscipit viverra auctor.</p>
+
+		<p id="curly">Vestibulum iaculis ac est sed efficitur. Donec aliquet, quam sed molestie eleifend, mauris est porta leo, vitae tristique metus lectus quis urna. Mauris interdum scelerisque erat vel sodales. Nullam at commodo magna. Sed dapibus mi id nisl laoreet maximus. Etiam facilisis risus in sagittis iaculis. Nam bibendum odio sit amet neque efficitur, vehicula feugiat quam tempor. Donec ac mauris sed libero feugiat sollicitudin sed et ex. Nullam porttitor finibus sem, eu imperdiet nunc commodo ac. Nunc id vulputate elit.Vestibulum iaculis ac est sed efficitur. Donec aliquet, quam sed molestie eleifend, mauris est porta leo, vitae tristique metus lectus quis urna. Mauris interdum scelerisque erat vel sodales. Nullam at commodo magna. Sed dapibus mi id nisl laoreet maximus. Etiam facilisis risus in sagittis iaculis. Nam bibendum odio sit amet neque efficitur, vehicula feugiat quam tempor. Donec ac mauris sed libero feugiat sollicitudin sed et ex. Nullam porttitor finibus sem, eu imperdiet nunc commodo ac. Nunc id vulputate elit.</p>
+    
+		<p id="moe">Ut commodo rutrum dictum. Sed sem ipsum, commodo lobortis bibendum ac, faucibus vel felis. Duis lobortis odio eleifend nisi posuere egestas nec sit amet lacus. Mauris eu arcu congue, ultrices mauris nec, luctus eros. Sed arcu dui, pellentesque eu luctus id, tincidunt id justo. Sed iaculis mi sed auctor tincidunt. Vestibulum dolor nisl, pulvinar non lacinia consectetur, dictum eu ex. Sed lobortis leo nunc, non hendrerit nulla sagittis vitae. Donec varius pulvinar purus, in blandit nulla malesuada id. Cras tincidunt feugiat tortor, nec cursus quam imperdiet eu. Etiam condimentum convallis neque. Duis euismod massa in lectus rutrum aliquam.</p>
+	
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register for the 2015 Contest | The C2 Photo Foundation</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <!-- Option 2 for Adding Videos, Need both File Links -->
+        <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet"> 
+		<script src="http://vjs.zencdn.net/4.11/video.js"></script>
+	</head>
+	<body>
+	    <div id="wrapper">
+            
+            <div id="header">
+                <img src="images/c2-heading.jpg" width="760" height="150" alt="The C2 Photo Foundation: Showcasing the importance of preservation with photography">
+            </div>
+            
+            <div id="nav">
+  				<ul>
+				    <li><a href="index.html">Home</a></li>
+				    <li><a href="register.html">Register</a></li>
+				    <li><a href="maps.html">Maps</a></li>
+				    <li><a href="events.html">Event Schedule</a></li>
+				    <li><a href="contacts.html">Contact</a></li>
+				</ul>
+            </div>
+			
+            <div id="main">
+				<h2>Register</h2>
+                <!-- 
+                	3 Options for Video 
+                    
+                 	1 - iframe Youtbe or Vimeo (Vimeo good if you don't want ads, but you would have to pay for a paid account) (Good for SEO too)
+                    2 - videojs plugin   
+                    3 - video tag with Flash fallback (least favorite - does not work in IE 6, 7, & 8 unless you make a flash video as fallback) (Also bad for bandwith)
+                 -->
+                 
+                <iframe src="http://player.vimeo.com/video/98478669?portrait=0" width="390" height="219" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/98478669">Stunning Night Sky Images: Earth & Sky Photo Contest 2014</a> from <a href="http://vimeo.com/btafreshi">Babak Tafreshi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                 
+                 
+                 <!-- Option 2 videojs.com-->
+				<video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="390" height="219" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{"example_option":true}'>
+                	<!-- Preload "auto" lets the device decide when to download, best to leave as is -->
+                    <!-- "control" triggers the controls to play/stop video -->
+                    <!-- Don't delete classes, but you can add classes.  But you can change the id.  Don't touch the data-setup either -->
+                    <!-- Gives the video an image before it plays so it doesn't look black -->
+					<source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+					<source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+					<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                    <!-- Paragraph will be replaced with a flash video unless the person has turned off flash, so unlikely they will see it but leave it anyway -->
+				</video>
+                 
+                <!-- Option 3 -->
+                <video> <!-- Immeadiately followed by one or more sources (different formats), browsers goes down the list -->
+                	<source>
+                    <source> <!-- Fill in with link to your video -->
+                    <source> <!-- Should really only have two "sources", WebM and H.264 (also mp4) are the only two formats that really work -->
+                    <source> <!-- All phones, etc. have H.264 decoders so they work the best on mobile devices -->
+                    <source> <!-- The currently open-sourced WebM is a good idea, but might not work as well as the fee based H.264 -->
+                    <p>This is fallbak if nothing works</p><!-- Hidden unless nothing else works, can be anything --> 
+                    <!-- Notice, need to review if charging for views. -->
+                    <!-- Miro Video Converter can convert your video files for free -->
+				</video> 
+				    
+            </div> <!-- End of Main -->
+        
+	        <div id="aside">
+				<h2>Hosted By:</h2>
+		
+				<img src="images/bug.png" width="135" height="80" alt="The C2 Photo Foundation logo" />
+				<!-- This is a note to myself - replace logo -->
+            
+				<h2>Platinum Sponsors</h2>
+		
+		        <ul>
+					<li><a href="#">Nicon</a></li>
+					<li><a href="#">Cannon</a></li>
+            		<li><a href="#">Troub Technology</a></li>
+		            <li><a href="#">Sampsons Printing</a></li>
+				</ul>
+
+			<h2>Gold Sponsors</h2>
+
+			<ul>
+				<li><a href="#">Ado-matic</a></li>
+				<li><a href="#">SMT foundation</a></li>
+    	        <li><a href="#">Whispers Aviary</a></li>
+            	<li><a href="#">Raven's Wing Graphics</a></li>
+	            <li><a href="#">Silvertop</a></li>
+    	        <li><a href="#">MountainTop Bikes</a></li>
+        	    <li><a href="#">Nonda ATV Training</a></li>
+            	<li><a href="#">Smiths Smithy</a></li>
+	            <li><a href="#">Pine Lake Lodge</a></li>
+			</ul>
+			</div>
+        
+	        <div id="footer">
+			<p>&copy; 2015 <span class="cologo">The C2 Photo Foundation</span> - <a href="#">Privacy Policy</a> - <a href="mailto:webmaster@c2gps.com">problems with site?</a></p>
+        	</div>
+		</div> <!-- End of wrapper -->
+	</body>
+</html>

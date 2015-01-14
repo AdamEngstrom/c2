@@ -1,0 +1,150 @@
+body {
+	background-color:#FFFFFF;
+	color:#fff;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	line-height:1.4;
+}
+		
+ul, ol {
+	padding: 0 0 0 20px;
+	margin:0;	
+}
+
+#wrapper {
+	background-image:url(../images/c2-background.png);
+	width:760px;
+	margin:0 auto 0 auto; /* Only works if there is a "width" to work with */
+	overflow: hidden; /* (2) Tells wrapper to see any floaters */
+}
+			
+#header {
+	width: 760px;
+	height: 150px;
+}
+		
+/* NAVIGATION */
+			
+#nav {
+	background-color:#000;
+}
+			
+#nav li {
+	list-style: none;
+	display: inline-block; /* Displays inline but still sort of acts like a box - May not work right in IE 6 and 7 */				
+}
+			
+#nav a:link,
+#nav a:visited { /* Visited has security issues so just keep it with a:link */
+	color: #fff;
+	text-decoration: none;
+	display: block; /* Display and padding makes the click box bigger so you can click on it eaiser */
+	padding: 12px;
+}
+			
+#nav a:hover,
+#nav a:active { /* You could do four states, but this is more common and better for UX */
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	display: block; /* Display and padding makes the click box bigger so you can click on it eaiser */
+	padding: 12px;
+}
+			
+/* MAIN */
+
+#main {
+	width: 400px;
+	float: left; /* (2) Most reliable way to make two columns */
+	padding: 20px 40px;							
+}
+			
+#main h2, #main h3, #main h4 {
+	margin:0;	
+}
+			
+#main h2 { /* Use Child Selectors before creating new classes */
+	text-transform:uppercase;
+	font-weight:normal; /* Gets rid of the browser's bolding */	
+}
+			
+	
+#main a:link,
+#main a:visited {
+	color: #fff;
+	text-decoration:none;
+}
+			
+#main a:hover,
+#main a:active {
+	color: #fff;
+	text-decoration:underline;
+}
+			
+/* ASIDE */
+			
+#aside {
+	padding: 20px 0 20px 40px; /* Since we used padding before in #main, we should use padding again */
+	width: 200px;
+	float: left; /* (2) Most reliable way to make two columns. Floating to the left is the easiest to control, especially when you have more than 2 columns */
+	color: #000;
+}
+			
+#aside a:link,
+#aside a:visited {
+	color: #000;
+	text-decoration:none;	
+}
+			
+#aside a:hover,
+#aside a:active {
+	color:#117A22;
+	text-decoration:underline;		
+}
+			
+#aside h2 {
+	text-transform:uppercase;
+	font-weight:normal; /* Gets rid of the browser's bolding */	
+	font-size: 18px;
+	color: #084b27;
+}
+			
+/* FOOTER */
+			
+#footer {
+	background-color:#000;
+	clear: both; /* Clears floaters to stay at the bottom - if you float something, you will probably need to clear it later*/
+	text-align:center;
+	font-size:12px;
+	padding: 15px 0 15px 0;
+}
+			
+#footer a:link,
+#footer a:visited {
+	color: #fff;
+	text-decoration:none;	
+}
+			
+#footer a:hover,
+#foooter a:active {
+	color:#fff;
+	text-decoration:underline;		
+}
+		
+.cologo {
+	color: #900;
+	font-family: Times, "Times New Roman", serif;
+}
+			
+blockquote {
+	color: #000;
+	background-color:#aed270;
+	padding: 3px 15px 3px 18px; /* 15 on right because text is ragged and shorter words make it look like there is more space than there really is */
+	font-size:11px;
+	margin:10px 26px 10px 26px;				
+}
+			
+blockquote p:first-child {
+	font-style: italic;	
+}
+			

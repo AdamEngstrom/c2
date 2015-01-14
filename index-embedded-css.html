@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The C2 Photo Foundation</title>
+        <style>
+			body {
+				background-color:#FFFFFF;
+				color:#fff;
+				font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size:15px;
+				line-height:1.4;
+			}
+			
+			ul, ol {
+				padding: 0 0 0 20px;
+				margin:0;	
+			}
+			
+
+			#wrapper {
+				background-image:url(images/c2-background.png);
+				width:760px;
+				margin:0 auto 0 auto; /* Only works if there is a "width" to work with */
+				overflow: hidden; /* (2) Tells wrapper to see any floaters */
+			}
+			
+			#header {
+				width: 760px;
+				height: 150px;
+			}
+			
+			/* NAVIGATION */
+			
+			#nav {
+				background-color:#000;
+			}
+			
+			#nav li {
+				list-style: none;
+				display: inline-block; /* Displays inline but still sort of acts like a box - May not work right in IE 6 and 7 */				
+			}
+			
+			#nav a:link,
+			#nav a:visited { /* Visited has security issues so just keep it with a:link */
+				color: #fff;
+				text-decoration: none;
+				display: block; /* Display and padding makes the click box bigger so you can click on it eaiser */
+				padding: 12px;
+			}
+			
+			#nav a:hover,
+			#nav a:active { /* You could do four states, but this is more common and better for UX */
+				color: #000;
+				background-color: #fff;
+				text-decoration: none;
+				display: block; /* Display and padding makes the click box bigger so you can click on it eaiser */
+				padding: 12px;
+			}
+			
+			/* MAIN */
+
+			#main {
+				width: 400px;
+				float: left; /* (2) Most reliable way to make two columns */
+				padding: 20px 40px;							
+			}
+			
+			#main h2, #main h3, #main h4 {
+				margin:0;	
+			}
+			
+			#main h2 { /* Use Child Selectors before creating new classes */
+				text-transform:uppercase;
+				font-weight:normal; /* Gets rid of the browser's bolding */	
+			}
+			
+	
+			#main a:link,
+			#main a:visited {
+				color: #fff;
+				text-decoration:none;
+			}
+			
+			#main a:hover,
+			#main a:active {
+				color: #fff;
+				text-decoration:underline;
+			}
+			
+			/* ASIDE */
+			
+			#aside {
+				padding: 20px 0 20px 40px; /* Since we used padding before in #main, we should use padding again */
+				width: 200px;
+				float: left; /* (2) Most reliable way to make two columns. Floating to the left is the easiest to control, especially when you have more than 2 columns */
+				color: #000;
+			}
+			
+			#aside a:link,
+			#aside a:visited {
+				color: #000;
+				text-decoration:none;	
+			}
+			
+			#aside a:hover,
+			#aside a:active {
+				color:#117A22;
+				text-decoration:underline;		
+			}
+			
+			#aside h2 {
+				text-transform:uppercase;
+				font-weight:normal; /* Gets rid of the browser's bolding */	
+				font-size: 18px;
+				color: #084b27;
+			}
+			
+			/* FOOTER */
+			
+			#footer {
+				background-color:#000;
+				clear: both; /* Clears floaters to stay at the bottom - if you float something, you will probably need to clear it later*/
+				text-align:center;
+				font-size:12px;
+				padding: 15px 0 15px 0;
+			}
+			
+			#footer a:link,
+			#footer a:visited {
+				color: #fff;
+				text-decoration:none;	
+			}
+			
+			#footer a:hover,
+			#foooter a:active {
+				color:#fff;
+				text-decoration:underline;		
+			}
+			
+			.cologo {
+				color: #900;
+				font-family: Times, "Times New Roman", serif;
+			}
+			
+			blockquote {
+				color: #000;
+				background-color:#aed270;
+				padding: 3px 15px 3px 18px; /* 15 on right because text is ragged and shorter words make it look like there is more space than there really is */
+				font-size:11px;
+				margin:10px 26px 10px 26px;				
+			}
+			
+			blockquote p:first-child {
+				font-style: italic;	
+			}
+			
+		</style>
+	</head>
+	<body>
+	    <div id="wrapper">
+            
+            <div id="header">
+                <img src="images/c2-heading.jpg" width="760" height="150" alt="The C2 Photo Foundation: Showcasing the importance of preservation with photography">
+            </div>
+            
+            <div id="nav">
+  				<ul>
+				    <li><a href="#">Home</a></li>
+				    <li><a href="#">Register</a></li>
+				    <li><a href="#">Maps</a></li>
+				    <li><a href="#">Event Schedule</a></li>
+				    <li><a href="#">Contact</a></li>
+				</ul>
+            </div>
+			
+            <div id="main">
+				<img src="images/lake-trans.png" width="408" height="174" alt="Autumn on Pine Lake, Wisconsin">
+
+			 	<p><b><span class="cologo">The C2 Photo Foundation</span></b> <strong>proudly</strong> announces the 2008 photo contest at Pine Lake Lodge in Northern Wisconsin.  Join us for 3 days of the photography, networking and sunsets. We are <em>dedicated</em>, as our founder says, to <i>photography, fun and philanthropy</i>.</p> 
+
+				<blockquote>
+					<p>&#8220;The ultimate test of man's conscience<br>may be his willingness to sacrifice something today<br>for future generations whose words of thanks will not be heard.&#8221;</p>
+					<p>&mdash; Gaylord Nelson<br>(former governor of Wisconsin, co-founder of Earth Day)</p>
+				</blockquote>
+
+				<h2>Friday, October 28th, 2008</h2>
+
+				<h3>Arrival and introductions</h3>
+	
+				<h4>1:30 - 3:00 p.m.</h4>
+
+				<p>Find your cabin, stow your gear, and grab a snack. Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend. Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar.Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante.</p> 
+
+				<h3>Dinner and Keynote</h3>
+
+				<h4>4:30 - 6:00 p.m.</h4>
+
+				<p>Dinner is served, hosted by David Jones. Cras dictum. Maecenas ut turpis. In vitae erat ac orci dignissim eleifend. Nunc quis justo. Sed vel ipsum in purus tincidunt</p>
+ 
+				<h2>Saturday, October 29th, 2008</h2>
+
+				<h3>Shooting Starts</h3>
+
+				<h4>6:30 - 11:00 a.m.</h4>
+
+				<p>Time to shoot, digital, film, large format whatever it takes.  Nunc quis justo. Sed vel ipsum in purus tincidunt pharetra. Sed pulvinar, felis id consectetuer malesuada.Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus.</p>
+ 
+				<h3>Lunch</h3> 
+        
+		        <h4>11:00 - 1:00 p.m.</h4>
+	
+				<p>Sandwich &amp; Soup on the run. In vitae erat ac orci di</p>
+
+				<h3>Capturing Sunset</h3>
+
+				<h4>2:00 - 8:00 p.m.</h4>
+
+				<p>Pick one of 4 trips for SaturdayÕs Safari Spectacular</p>
+		
+      			<ol>
+					<li><a href="#">River Rapids</a></li>
+					<li><a href="#">Rush'N Brush</a></li>
+           			 <li><a href="#">Helicopter Swirl</a></li>
+            		<li><a href="#">Prairie Run ATV</a></li>
+				</ol>
+			</div>
+        
+        <div id="aside">
+			<h2>Hosted By:</h2>
+
+			<img src="images/bug.png" width="135" height="80" alt="The C2 Photo Foundation logo" />
+			<!-- This is a note to myself - replace logo -->
+            
+			<h2>Platinum Sponsors</h2>
+		
+	        <ul>
+				<li><a href="#">Nicon</a></li>
+				<li><a href="#">Cannon</a></li>
+            	<li><a href="#">Troub Technology</a></li>
+	            <li><a href="#">Sampsons Printing</a></li>
+			</ul>
+
+		<h2>Gold Sponsors</h2>
+
+		<ul>
+			<li><a href="#">Ado-matic</a></li>
+			<li><a href="#">SMT foundation</a></li>
+            <li><a href="#">Whispers Aviary</a></li>
+            <li><a href="#">Raven's Wing Graphics</a></li>
+            <li><a href="#">Silvertop</a></li>
+            <li><a href="#">MountainTop Bikes</a></li>
+            <li><a href="#">Nonda ATV Training</a></li>
+            <li><a href="#">Smiths Smithy</a></li>
+            <li><a href="#">Pine Lake Lodge</a></li>
+		</ul>
+		</div>
+        
+        <div id="footer">
+		<p>&copy; 2015 <span class="cologo">The C2 Photo Foundation</span> - <a href="#">Privacy Policy</a> - <a href="mailto:webmaster@c2gps.com">problems with site?</a></p>
+        </div>
+		</div> <!-- End of wrapper -->
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Box Control</title>
+        <style>
+			* {margin: 0; padding: 0;}
+			/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ -> apply a natural box layout model to all elements, but allowing components to change */
+			html {box-sizing: border-box;}
+			*, *:before, *:after {box-sizing: inherit;}
+			* {outline: 1px solid rgba(0,0,0,.1); background-color: rgba(200,0,0,.05);}
+			/* Troubleshooting code only ^^^^^^^^ */
+			
+			#nav {
+				/* width: 55%; */
+				max-width: 600px;
+				margin: 0 auto;
+				list-style:none;
+			}
+			
+			#nav li {
+				display: inline-block;	
+				width: 32%;
+			}
+			
+
+		</style>
+	</head>
+
+	<body>
+		<ul id="nav">
+        	<li id="nav1"><a href="#">Home</a></li>
+        	<li id="nav2"><a href="#">Services</a></li>
+        	<li id="nav3"><a href="#">Products</a></li>                        
+        </ul>
+
+	</body>
+</html>
